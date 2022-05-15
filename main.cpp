@@ -20,7 +20,7 @@ int main() {
 
     vector<int> sorted = qs->sort(vec);
 
-    if (rbs->search(vec, 1)) {
+    if (rbs->search(sorted, 1)) {
         cout << "true ";
     } else {
         cout << "false ";
