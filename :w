@@ -1,0 +1,12 @@
+#include "QuickSort.h"
+
+std::vector<int> QuickSort::sort(std::vector<int> list) {
+    int n = list.size() - 1;
+    sortUtil(list, 0, n);
+}
+
+std::vector<int> QuickSort::sortUtil(std::vector<int> list, int l, int r) {
+    int pivot = partition(list. l, r);
+    sortUtil(list, l, pivot-1);
+    sortUtil(list, pivot+1, r);
+
